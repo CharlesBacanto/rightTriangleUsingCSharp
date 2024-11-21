@@ -7,7 +7,7 @@
         Console.Write("Please enter the max amount: "); // Prompt the User to enter the max amount 
         int maxValue = Convert.ToInt32(Console.ReadLine()); // Fetch amount
 
-        for (int i = 0; i <= maxValue; i++) // For loop to generate each line
+        for (int i = 1; i <= maxValue; i++) // For loop to generate each line
         {
            Console.WriteLine(clone(character, i));
         }
@@ -17,7 +17,7 @@
     static string clone(char c, int value) // Method/Function for generating lines
     {
         string cloned ="";
-        for(int i = 0; i < value; i++)
+        for(int i = 1; i <= value; i++)
         {
             cloned += c;
         }
